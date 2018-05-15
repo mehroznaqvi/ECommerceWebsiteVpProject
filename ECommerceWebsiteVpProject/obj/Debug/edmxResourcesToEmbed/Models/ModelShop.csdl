@@ -7,10 +7,9 @@
     <Property Name="pId" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="pName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="pPrice" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="pDateCreation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="pImage" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="pQuantity" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
   </EntityType>
-  <EntityContainer Name="EcommerceWebsite" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="WebsiteEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="products" EntityType="Self.product" />
   </EntityContainer>
 </Schema>

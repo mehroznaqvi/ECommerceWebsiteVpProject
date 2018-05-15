@@ -52,4 +52,3 @@ C:\Users\mehro\documents\visual studio 2013\Projects\ECommerceWebsiteVpProject\E
 C:\Users\mehro\documents\visual studio 2013\Projects\ECommerceWebsiteVpProject\ECommerceWebsiteVpProject\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\mehro\documents\visual studio 2013\Projects\ECommerceWebsiteVpProject\ECommerceWebsiteVpProject\obj\Debug\ECommerceWebsiteVpProject.dll
 C:\Users\mehro\documents\visual studio 2013\Projects\ECommerceWebsiteVpProject\ECommerceWebsiteVpProject\obj\Debug\ECommerceWebsiteVpProject.pdb
-C:\Users\mehro\documents\visual studio 2013\Projects\ECommerceWebsiteVpProject\ECommerceWebsiteVpProject\obj\Debug\ECommerceWebsiteVpProject.csprojResolveAssemblyReference.cache

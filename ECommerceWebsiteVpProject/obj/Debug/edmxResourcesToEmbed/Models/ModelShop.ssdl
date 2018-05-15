@@ -7,8 +7,7 @@
     <Property Name="pId" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="pName" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="pPrice" Type="varchar" MaxLength="50" Nullable="false" />
-    <Property Name="pDateCreation" Type="varchar" MaxLength="50" Nullable="false" />
-    <Property Name="pImage" Type="varchar(max)" Nullable="false" />
+    <Property Name="pQuantity" Type="varchar" MaxLength="50" Nullable="false" />
   </EntityType>
   <EntityContainer Name="WebsiteModelStoreContainer">
     <EntitySet Name="product" EntityType="Self.product" Schema="dbo" store:Type="Tables" />

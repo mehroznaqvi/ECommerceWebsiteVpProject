@@ -1,0 +1,41 @@
+﻿@{
+    Layout = null;
+    }
+@using ECommerceWebsiteVpProject.Models
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width"/>
+          
+    <title>Index</title>
+</head>
+<body>
+    <table cellpadding="2" cellspacing="2" border="1">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Buy</th>
+            </tr>
+            
+        </thead>
+        <tbody>
+            @foreach (product p in ViewBag.listProducts)
+            {
+                <tr>
+                    <td>@p.pId</td>
+                    <td>@p.pName</td>
+                    <td>@p.pPrice</td>
+                    <td align="center">@Html.ActionLink("Order Now", "OrderNow", "ShoppingCart", null, new { id = p.pId })</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</body>
+
+</html>
+
+

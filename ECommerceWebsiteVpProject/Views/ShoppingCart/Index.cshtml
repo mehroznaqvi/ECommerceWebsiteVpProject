@@ -1,0 +1,46 @@
+﻿
+@{
+    Layout = null;}
+@{
+    Layout = null;
+}
+@using ECommerceWebsiteVpProject.Models
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <table cellpadding="2" cellspacing="2" border="1">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Buy</th>
+                <th>Sub Total</th>
+
+            </tr>
+
+        </thead>
+        <tbody>
+            @foreach (Item item in(List<Item>) Session["cart"])
+            {
+                <tr>
+                    <td>@item.Pr.pId</td>
+                    <td>@item.Pr.pName</td>
+                    <td>@item.Pr.pPrice</td>
+                    <td>@item.Pr.pQuantity</td>
+                    <td>@(Int32.Parse(item.Pr.pPrice) * item.Quantity)</td>
+               </tr>
+            }
+        </tbody>
+    </table>
+
+</body>
+
+</html>
+
+

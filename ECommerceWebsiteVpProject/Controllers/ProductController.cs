@@ -5,14 +5,15 @@ using System.Web;
 using System.Web.Mvc;
 using ECommerceWebsiteVpProject.Models;
 
-
 namespace ECommerceWebsiteVpProject.Controllers
 {
-    public class ShopController : Controller
+    public class ProductController : Controller
     {
         private WebsiteEntities db = new WebsiteEntities();
+        
         public ActionResult Index()
         {
+            ViewBag.listProducts = db.products.ToList();
             return View();
         }
 	}

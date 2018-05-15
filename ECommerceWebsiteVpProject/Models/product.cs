@@ -17,6 +17,6 @@ namespace ECommerceWebsiteVpProject.Models
         public string pId { get; set; }
         public string pName { get; set; }
         public string pPrice { get; set; }
-        public string pDateCreation { get; set; }
+        public string pQuantity { get; set; }
     }
 }
