@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WebsiteModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="product">
+    <Key>
+      <PropertyRef Name="pId" />
+    </Key>
+    <Property Name="pId" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="pName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="pPrice" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="pDateCreation" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="pImage" Type="varchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="WebsiteModelStoreContainer">
+    <EntitySet Name="product" EntityType="Self.product" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

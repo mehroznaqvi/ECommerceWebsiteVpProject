@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WebsiteModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="CustomerDetails">
+    <Key>
+      <PropertyRef Name="CustomerId" />
+    </Key>
+    <Property Name="CustomerId" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="customerName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="customerEmail" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="customerPhoneNo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="customerAddress" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OrderDetails">
+    <Key>
+      <PropertyRef Name="orderID" />
+    </Key>
+    <Property Name="orderID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="customerID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="itemName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="itemQuentity" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Website.dbo.UserLogin' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="UserLogin">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="UserName" />
+      <PropertyRef Name="password" />
+      <PropertyRef Name="status" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="password" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="status" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="WebsiteModelStoreContainer">
+    <EntitySet Name="CustomerDetails" EntityType="Self.CustomerDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OrderDetails" EntityType="Self.OrderDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserLogin" EntityType="Self.UserLogin" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [UserLogin].[id] AS [id], 
+    [UserLogin].[UserName] AS [UserName], 
+    [UserLogin].[password] AS [password], 
+    [UserLogin].[status] AS [status]
+    FROM [dbo].[UserLogin] AS [UserLogin]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

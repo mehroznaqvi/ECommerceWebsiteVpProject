@@ -27,7 +27,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href=@Url.Content("~/Content/template/css/owl.carousel.css")>
-    <link rel="stylesheet" href=@Url.Content("~/Content/template/style.css")>
+    <link rel="stylesheet" href=@Url.Content("~/Content/template/stylesheet.css")>
     <link rel="stylesheet" href=@Url.Content("~/Content/template/css/responsive.css")>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -86,7 +86,7 @@
             <div class="row">
                 <div class="col-sm-6">
                     <div class="logo">
-                        <h1><a href="./"><img src=@Url.Content("~/Content/template/img/logo.png")></a></h1>
+                        <h1><a href="./"><img src=@Url.Content("~/Content/template/images/logo4.png")></a></h1>
                     </div>
                 </div>
 
@@ -144,9 +144,24 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-sm-6">
+                    <div class="single-shop-product" id="product">
+                        <div class="product-upper">
+                            <img src=@Url.Content("~/Content/template/images/product2.jpg") alt="">
+                        </div>
+                        <h2><a href="" id="name">Apple new mac book 2015 March :P</a></h2>
+                        <div class="product-carousel-price"id="price">
+                            <ins>$899.00</ins> <del>$999.00</del>
+                        </div>
+
+                        <div class="product-option-shop">
+                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" onclick="addtoCartFunction(1)" rel="nofollow" href="/cart/?add-to-cart=70">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
                     <div class="single-shop-product">
                         <div class="product-upper">
-                            <img src=@Url.Content("~/Content/template/img/product-2.jpg") alt="">
+                            <img src=@Url.Content("~/Content/template/images/product1.jpg") alt="">
                         </div>
                         <h2><a href="">Apple new mac book 2015 March :P</a></h2>
                         <div class="product-carousel-price">
@@ -161,67 +176,7 @@
                 <div class="col-md-3 col-sm-6">
                     <div class="single-shop-product">
                         <div class="product-upper">
-                            <img src=@Url.Content("~/Content/template/img/product-1.jpg") alt="">
-                        ></div>
-                        <h2><a href="">Apple new mac book 2015 March :P</a></h2>
-                        <div class="product-carousel-price">
-                            <ins>$899.00</ins> <del>$999.00</del>
-                        </div>
-
-                        <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="single-shop-product">
-                        <div class="product-upper">
-                            <img src=@Url.Content("~/Content/template/img/product-3.jpg") alt="">
-                        ></div>
-                        <h2><a href="">Apple new mac book 2015 March :P</a></h2>
-                        <div class="product-carousel-price">
-                            <ins>$899.00</ins> <del>$999.00</del>
-                        </div>
-
-                        <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="single-shop-product">
-                        <div class="product-upper">
-                            <img src=@Url.Content("~/Content/template/img/product-4.jpg") alt="">
-                        ></div>
-                        <h2><a href="">Apple new mac book 2015 March :P</a></h2>
-                        <div class="product-carousel-price">
-                            <ins>$899.00</ins> <del>$999.00</del>
-                        </div>
-
-                        <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="single-shop-product">
-                        <div class="product-upper">
-                            <img src=@Url.Content("~/Content/template/img/product-2.jpg") alt="">
-                        ></div>
-                        <h2><a href="">Apple new mac book 2015 March :P</a></h2>
-                        <div class="product-carousel-price">
-                            <ins>$899.00</ins> <del>$999.00</del>
-                        </div>
-
-                        <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="single-shop-product">
-                        <div class="product-upper">
-                            <img src=@Url.Content("~/Content/template/img/product-1.jpg") alt="">
+                            <img src=@Url.Content("~/Content/template/images/product3.jpg") alt="">
                         </div>
                         <h2><a href="">Apple new mac book 2015 March :P</a></h2>
                         <div class="product-carousel-price">
@@ -236,7 +191,7 @@
                 <div class="col-md-3 col-sm-6">
                     <div class="single-shop-product">
                         <div class="product-upper">
-                            <img src=@Url.Content("~/Content/template/img/product-3.jpg") alt="">
+                            <img src=@Url.Content("~/Content/template/images/product4.jpg") alt="">
                         </div>
                         <h2><a href="">Apple new mac book 2015 March :P</a></h2>
                         <div class="product-carousel-price">
@@ -251,7 +206,7 @@
                 <div class="col-md-3 col-sm-6">
                     <div class="single-shop-product">
                         <div class="product-upper">
-                            <img src=@Url.Content("~/Content/template/img/product-4.jpg") alt="">
+                            <img src=@Url.Content("~/Content/template/images/product5.jpg") alt="">
                         </div>
                         <h2><a href="">Apple new mac book 2015 March :P</a></h2>
                         <div class="product-carousel-price">
@@ -266,7 +221,7 @@
                 <div class="col-md-3 col-sm-6">
                     <div class="single-shop-product">
                         <div class="product-upper">
-                            <img src=@Url.Content("~/Content/template/img/product-2.jpg") alt="">
+                            <img src=@Url.Content("~/Content/template/images/product6.jpg") alt="">
                         </div>
                         <h2><a href="">Apple new mac book 2015 March :P</a></h2>
                         <div class="product-carousel-price">
@@ -281,7 +236,7 @@
                 <div class="col-md-3 col-sm-6">
                     <div class="single-shop-product">
                         <div class="product-upper">
-                            <img src=@Url.Content("~/Content/template/img/product-1.jpg") alt="">
+                            <img src=@Url.Content("~/Content/template/images/product7.jpg") alt="">
                         </div>
                         <h2><a href="">Apple new mac book 2015 March :P</a></h2>
                         <div class="product-carousel-price">
@@ -296,7 +251,7 @@
                 <div class="col-md-3 col-sm-6">
                     <div class="single-shop-product">
                         <div class="product-upper">
-                            <img src=@Url.Content("~/Content/template/img/product-3.jpg") alt="">
+                            <img src=@Url.Content("~/Content/template/images/product8.jpg") alt="">
                         </div>
                         <h2><a href="">Apple new mac book 2015 March :P</a></h2>
                         <div class="product-carousel-price">
@@ -311,7 +266,52 @@
                 <div class="col-md-3 col-sm-6">
                     <div class="single-shop-product">
                         <div class="product-upper">
-                            <img src=@Url.Content("~/Content/template/img/product-4.jpg") alt="">
+                            <img src=@Url.Content("~/Content/template/images/product1.jpg") alt="">
+                        </div>
+                        <h2><a href="">Apple new mac book 2015 March :P</a></h2>
+                        <div class="product-carousel-price">
+                            <ins>$899.00</ins> <del>$999.00</del>
+                        </div>
+
+                        <div class="product-option-shop">
+                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-shop-product">
+                        <div class="product-upper">
+                            <img src=@Url.Content("~/Content/template/images/product2.jpg") alt="">
+                        </div>
+                        <h2><a href="">Apple new mac book 2015 March :P</a></h2>
+                        <div class="product-carousel-price">
+                            <ins>$899.00</ins> <del>$999.00</del>
+                        </div>
+
+                        <div class="product-option-shop">
+                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-shop-product">
+                        <div class="product-upper">
+                            <img src=@Url.Content("~/Content/template/images/product3.jpg") alt="">
+                        </div>
+                        <h2><a href="">Apple new mac book 2015 March :P</a></h2>
+                        <div class="product-carousel-price">
+                            <ins>$899.00</ins> <del>$999.00</del>
+                        </div>
+
+                        <div class="product-option-shop">
+                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-shop-product">
+                        <div class="product-upper">
+                            <img src=@Url.Content("~/Content/template/images/product4.jpg") alt="">
                         </div>
                         <h2><a href="">Apple new mac book 2015 March :P</a></h2>
                         <div class="product-carousel-price">
@@ -351,7 +351,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> <!-- End Product area -->
 
 
     <div class="footer-top-area">
@@ -446,5 +446,33 @@
 
     <!-- Main Script -->
     <script src=@Url.Content("~/Content/template/js/main.js")></script>
+    
+    <script>
+        $(document).ready(function () {
+            var data = $("#product").serialize();
+
+            $.ajax({
+
+                type: "POST",
+                url: "/cart/addtocar",
+                data: data,
+                
+                success: function (response) {
+                    alert("Added to Cart");
+                }
+            })
+        })
+        function addtoCartFunction()
+        {
+            allData[""];
+            var name = document.getElementById("name").value;
+            var price = document.getElementById("price").value;
+
+            allData.push(name);
+            allData.push(price);
+        }
+
+
+    </script>
 </body>
 </html>

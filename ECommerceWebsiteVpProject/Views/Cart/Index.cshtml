@@ -1,4 +1,4 @@
-﻿
+﻿@model ECommerceWebsiteVpProject.Models.CartModel
 @{
     Layout = null;
 }<!DOCTYPE html>
@@ -27,7 +27,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href=@Url.Content("~/Content/template/css/owl.carousel.css")>
-    <link rel="stylesheet" href=@Url.Content("~/Content/template/style.css")>
+    <link rel="stylesheet" href=@Url.Content("~/Content/template/stylesheet.css")>
     <link rel="stylesheet" href=@Url.Content("~/Content/template/css/responsive.css")>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -86,7 +86,7 @@
             <div class="row">
                 <div class="col-sm-6">
                     <div class="logo">
-                        <h1><a href="./"><img src=@Url.Content("~/Content/template/img/logo.png")></a></h1>
+                        <h1><a href="./"><img src=@Url.Content("~/Content/template/images/logo4.png")></a></h1>
                     </div>
                 </div>
 
@@ -204,11 +204,11 @@
                                     <thead>
                                         <tr>
                                             <th class="product-remove">&nbsp;</th>
-                                            <th class="product-thumbnail">&nbsp;</th>
-                                            <th class="product-name">Product</th>
-                                            <th class="product-price">Price</th>
-                                            <th class="product-quantity">Quantity</th>
-                                            <th class="product-subtotal">Total</th>
+                                            <th class="product-thumbnail" id="image">&nbsp;</th>
+                                            <th class="product-name" id="name">Product</th>
+                                            <th class="product-price"id="price">Price</th>
+                                            <th class="product-quantity"id="quantity">Quantity</th>
+                                            <th class="product-subtotal"id="total">Total</th>
                                         </tr>
                                     </thead>
                                     <tbody>
