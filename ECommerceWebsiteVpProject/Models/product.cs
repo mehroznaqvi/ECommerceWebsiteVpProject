@@ -14,9 +14,9 @@ namespace ECommerceWebsiteVpProject.Models
     
     public partial class product
     {
-        public string pId { get; set; }
+        public int pId { get; set; }
         public string pName { get; set; }
         public string pPrice { get; set; }
-        public string pQuantity { get; set; }
+        public string pImage { get; set; }
     }
 }

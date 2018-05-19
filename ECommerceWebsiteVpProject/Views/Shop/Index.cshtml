@@ -1,7 +1,8 @@
 ﻿
 @{
-    Layout = null;
-}<!DOCTYPE html>
+    Layout=null;
+}
+<!DOCTYPE html>
 <!--
     ustora by freshdesignweb.com
     Twitter: https://twitter.com/freshdesignweb
@@ -92,7 +93,7 @@
 
                 <div class="col-sm-6">
                     <div class="shopping-item">
-                        <a href=@Url.Content("~/Content/template/cart.html")>Cart - <span class="cart-amunt">$100</span> <i class="fa fa-shopping-cart"></i> <span class="product-count">5</span></a>
+                        <a href=@Url.Content("~/Content/template/cart.html")>Cart - <span class="cart-amunt">100</span> <i class="fa fa-shopping-cart"></i> <span class="product-count">0</span></a>
                     </div>
                 </div>
             </div>
@@ -146,15 +147,15 @@
                 <div class="col-md-3 col-sm-6">
                     <div class="single-shop-product" id="product">
                         <div class="product-upper">
-                            <img src=@Url.Content("~/Content/template/images/product2.jpg") alt="">
+                            <img src=@Url.Content("~/Content/template/images/product2.jpg") id ="picture" alt="">
                         </div>
-                        <h2><a href="" id="name">Apple new mac book 2015 March :P</a></h2>
-                        <div class="product-carousel-price"id="price">
-                            <ins>$899.00</ins> <del>$999.00</del>
+                        <h2><a href="" id="name">Akhroti Sohan Halwa</a></h2>
+                        <div class="product-carousel-price">
+                            <ins id="price">800.00/- PKR</ins> <del>1000.00/- PKR</del>
                         </div>
 
                         <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" onclick="addtoCartFunction(1)" rel="nofollow" href="/cart/?add-to-cart=70">Add to cart</a>
+                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" type="button" id="btnSave" rel="nofollow" href="/Shop/Index">Add to cart</a>
                         </div>
                     </div>
                 </div>
@@ -163,9 +164,9 @@
                         <div class="product-upper">
                             <img src=@Url.Content("~/Content/template/images/product1.jpg") alt="">
                         </div>
-                        <h2><a href="">Apple new mac book 2015 March :P</a></h2>
+                        <h2><a href="">Pistachios Halwa</a></h2>
                         <div class="product-carousel-price">
-                            <ins>$899.00</ins> <del>$999.00</del>
+                            <ins>750.00/- PKR</ins> <del>999.00/- PKR</del>
                         </div>
 
                         <div class="product-option-shop">
@@ -178,9 +179,9 @@
                         <div class="product-upper">
                             <img src=@Url.Content("~/Content/template/images/product3.jpg") alt="">
                         </div>
-                        <h2><a href="">Apple new mac book 2015 March :P</a></h2>
+                        <h2><a href="">Badami Sohan Halwa</a></h2>
                         <div class="product-carousel-price">
-                            <ins>$899.00</ins> <del>$999.00</del>
+                            <ins>799.00/- PKR</ins> <del>999.00/- PKR</del>
                         </div>
 
                         <div class="product-option-shop">
@@ -193,9 +194,9 @@
                         <div class="product-upper">
                             <img src=@Url.Content("~/Content/template/images/product4.jpg") alt="">
                         </div>
-                        <h2><a href="">Apple new mac book 2015 March :P</a></h2>
+                        <h2><a href="">Zafarani Kaju halwa</a></h2>
                         <div class="product-carousel-price">
-                            <ins>$899.00</ins> <del>$999.00</del>
+                            <ins>999.00/- PKR</ins> <del>1199.00/- PKR</del>
                         </div>
 
                         <div class="product-option-shop">
@@ -208,9 +209,9 @@
                         <div class="product-upper">
                             <img src=@Url.Content("~/Content/template/images/product5.jpg") alt="">
                         </div>
-                        <h2><a href="">Apple new mac book 2015 March :P</a></h2>
+                        <h2><a href="">Premium 2in1 Sohan Halwa</a></h2>
                         <div class="product-carousel-price">
-                            <ins>$899.00</ins> <del>$999.00</del>
+                            <ins>999.00/- PKR</ins> <del>1199.00/- PKR</del>
                         </div>
 
                         <div class="product-option-shop">
@@ -223,9 +224,9 @@
                         <div class="product-upper">
                             <img src=@Url.Content("~/Content/template/images/product6.jpg") alt="">
                         </div>
-                        <h2><a href="">Apple new mac book 2015 March :P</a></h2>
+                        <h2><a href="">Sugar-free Sohan Halwa</a></h2>
                         <div class="product-carousel-price">
-                            <ins>$899.00</ins> <del>$999.00</del>
+                            <ins>1099.00/- PKR</ins> <del>1299.00/- PKR</del>
                         </div>
 
                         <div class="product-option-shop">
@@ -238,9 +239,9 @@
                         <div class="product-upper">
                             <img src=@Url.Content("~/Content/template/images/product7.jpg") alt="">
                         </div>
-                        <h2><a href="">Apple new mac book 2015 March :P</a></h2>
+                        <h2><a href="">24 Ticky Pack – 1 Kg</a></h2>
                         <div class="product-carousel-price">
-                            <ins>$899.00</ins> <del>$999.00</del>
+                            <ins>699.00/- PKR</ins> <del>799.00/- PKR</del>
                         </div>
 
                         <div class="product-option-shop">
@@ -253,9 +254,9 @@
                         <div class="product-upper">
                             <img src=@Url.Content("~/Content/template/images/product8.jpg") alt="">
                         </div>
-                        <h2><a href="">Apple new mac book 2015 March :P</a></h2>
+                        <h2><a href="">Special 1KG Sohan Halwa</a></h2>
                         <div class="product-carousel-price">
-                            <ins>$899.00</ins> <del>$999.00</del>
+                            <ins>899.00/- PKR</ins> <del>999.00/- PKR</del>
                         </div>
 
                         <div class="product-option-shop">
@@ -268,9 +269,9 @@
                         <div class="product-upper">
                             <img src=@Url.Content("~/Content/template/images/product1.jpg") alt="">
                         </div>
-                        <h2><a href="">Apple new mac book 2015 March :P</a></h2>
+                        <h2><a href="">Special 2KG Sohan Halwa</a></h2>
                         <div class="product-carousel-price">
-                            <ins>$899.00</ins> <del>$999.00</del>
+                            <ins>1699.00/- PKR</ins> <del>1899.00/- PKR</del>
                         </div>
 
                         <div class="product-option-shop">
@@ -283,9 +284,9 @@
                         <div class="product-upper">
                             <img src=@Url.Content("~/Content/template/images/product2.jpg") alt="">
                         </div>
-                        <h2><a href="">Apple new mac book 2015 March :P</a></h2>
+                        <h2><a href="">Special Kaju Sohan Halwa</a></h2>
                         <div class="product-carousel-price">
-                            <ins>$899.00</ins> <del>$999.00</del>
+                            <ins>899.00/- PKR</ins> <del>999.00/- PKR</del>
                         </div>
 
                         <div class="product-option-shop">
@@ -298,9 +299,9 @@
                         <div class="product-upper">
                             <img src=@Url.Content("~/Content/template/images/product3.jpg") alt="">
                         </div>
-                        <h2><a href="">Apple new mac book 2015 March :P</a></h2>
+                        <h2><a href="">Double Akhroti Sohan Halwa</a></h2>
                         <div class="product-carousel-price">
-                            <ins>$899.00</ins> <del>$999.00</del>
+                            <ins>999.00/- PKR</ins> <del>1199.00/- PKR</del>
                         </div>
 
                         <div class="product-option-shop">
@@ -313,9 +314,9 @@
                         <div class="product-upper">
                             <img src=@Url.Content("~/Content/template/images/product4.jpg") alt="">
                         </div>
-                        <h2><a href="">Apple new mac book 2015 March :P</a></h2>
+                        <h2><a href="">Mix Dry Fruits Sohan Halwa</a></h2>
                         <div class="product-carousel-price">
-                            <ins>$899.00</ins> <del>$999.00</del>
+                            <ins>1099.00/- PKR</ins> <del>1299.00/- PKR</del>
                         </div>
 
                         <div class="product-option-shop">
@@ -443,36 +444,38 @@
 
     <!-- jQuery easing -->
     <script src=@Url.Content("~/Content/template/js/jquery.easing.1.3.min.js")></script>
+    <script>
+        $(document).ready(function () {
+            //function will be called on button click having id btnsave
+            $("#btnSave").click(function () {
+                $.ajax(
+                {
+                    type: "POST", //HTTP POST Method
+                    url: "/shop/Index", // Controller/View
+                    data: { //Passing data
+                        Name: $("#name").val(), //Reading text box values using Jquery
+                        Price: $("#price").val,
+                        Image: $("#picture").val,
+                        success: function () {
+                            alert("Data is copyed")
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+
+
+
+
+
+
 
     <!-- Main Script -->
     <script src=@Url.Content("~/Content/template/js/main.js")></script>
-    
-    <script>
-        $(document).ready(function () {
-            var data = $("#product").serialize();
-
-            $.ajax({
-
-                type: "POST",
-                url: "/cart/addtocar",
-                data: data,
-                
-                success: function (response) {
-                    alert("Added to Cart");
-                }
-            })
-        })
-        function addtoCartFunction()
-        {
-            allData[""];
-            var name = document.getElementById("name").value;
-            var price = document.getElementById("price").value;
-
-            allData.push(name);
-            allData.push(price);
-        }
 
 
-    </script>
+
+
 </body>
 </html>

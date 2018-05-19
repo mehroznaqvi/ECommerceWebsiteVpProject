@@ -13,10 +13,10 @@ namespace ECommerceWebsiteVpProject.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class WebsiteEntities : DbContext
+    public partial class WebsiteEntities2 : DbContext
     {
-        public WebsiteEntities()
-            : base("name=WebsiteEntities")
+        public WebsiteEntities2()
+            : base("name=WebsiteEntities2")
         {
         }
     

@@ -4,20 +4,21 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="WebsiteModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="WebsiteModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="product">
           <Key>
             <PropertyRef Name="pId" />
           </Key>
-          <Property Name="pId" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="pId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="pName" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="pPrice" Type="varchar" MaxLength="50" Nullable="false" />
-          <Property Name="pQuantity" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="pImage" Type="varchar" MaxLength="150" Nullable="false" />
         </EntityType>
         <EntityContainer Name="WebsiteModelStoreContainer">
           <EntitySet Name="product" EntityType="Self.product" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
-      </Schema></edmx:StorageModels>
+      </Schema>
+    </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="WebsiteModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -25,12 +26,12 @@
           <Key>
             <PropertyRef Name="pId" />
           </Key>
-          <Property Name="pId" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="pId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="pName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="pPrice" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="pQuantity" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="pImage" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
         </EntityType>
-        <EntityContainer Name="WebsiteEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="WebsiteEntities2" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="products" EntityType="Self.product" />
         </EntityContainer>
       </Schema>
@@ -38,14 +39,14 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="WebsiteModelStoreContainer" CdmEntityContainer="WebsiteEntities">
+        <EntityContainerMapping StorageEntityContainer="WebsiteModelStoreContainer" CdmEntityContainer="WebsiteEntities2">
           <EntitySetMapping Name="products">
             <EntityTypeMapping TypeName="WebsiteModel.product">
               <MappingFragment StoreEntitySet="product">
-                <ScalarProperty Name="pQuantity" ColumnName="pQuantity" />
                 <ScalarProperty Name="pId" ColumnName="pId" />
                 <ScalarProperty Name="pName" ColumnName="pName" />
                 <ScalarProperty Name="pPrice" ColumnName="pPrice" />
+                <ScalarProperty Name="pImage" ColumnName="pImage" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
