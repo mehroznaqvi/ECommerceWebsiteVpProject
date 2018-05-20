@@ -26,5 +26,10 @@ namespace ECommerceWebsiteVpProject.Models
         }
     
         public virtual DbSet<product> products { get; set; }
+
+        internal void Add(ShopModelView shopModelView)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
