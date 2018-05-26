@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WebsiteModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="product">
+    <Key>
+      <PropertyRef Name="pId" />
+    </Key>
+    <Property Name="pId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="pName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="pPrice" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="pImage" Type="varchar" MaxLength="150" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RegisterUser">
+    <Key>
+      <PropertyRef Name="userId" />
+    </Key>
+    <Property Name="userId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="userFirstName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="userLastName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="userAddress" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="userCountry" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="userProvience" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="userCity" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="userPostelcode" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="userEmail" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="userPhone" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="userPassword" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="WebsiteModelStoreContainer">
+    <EntitySet Name="product" EntityType="Self.product" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RegisterUser" EntityType="Self.RegisterUser" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

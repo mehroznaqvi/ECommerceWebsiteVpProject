@@ -10,16 +10,23 @@ namespace ECommerceWebsiteVpProject.Controllers
 {
     public class ShopController : Controller
     {
+        private WebsiteEntitiesDB db = new WebsiteEntitiesDB();
 
         public ActionResult Index()
         {
-            return View();
+            List<product> list = db.products.ToList();
+            return View(list);
         }
 
-        [HttpPost]
-        public ActionResult create(ShopModelView shopModelView)
+
+        public ActionResult SaveData(string name, string price, string picture)
         {
-            WebsiteEntities2 db = new WebsiteEntities2();
+            product obj = new product();
+            obj.pName = name;
+            obj.pPrice = price;
+            obj.pImage = picture;
+            db.products.Add(obj);
+            db.SaveChanges();
             return View();
             
 

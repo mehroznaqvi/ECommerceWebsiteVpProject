@@ -144,186 +144,276 @@
         <div class="zigzag-bottom"></div>
         <div class="container">
             <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <div class="single-shop-product" id="product">
-                        <div class="product-upper">
-                            <img src=@Url.Content("~/Content/template/images/product2.jpg") id ="picture" alt="">
-                        </div>
-                        <h2><a href="" id="name">Akhroti Sohan Halwa</a></h2>
-                        <div class="product-carousel-price">
-                            <ins id="price">800.00/- PKR</ins> <del>1000.00/- PKR</del>
-                        </div>
 
-                        <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" type="button" id="btnSave" rel="nofollow" href="/Shop/Index">Add to cart</a>
-                        </div>
-                    </div>
-                </div>
+
+                
+                
                 <div class="col-md-3 col-sm-6">
                     <div class="single-shop-product">
-                        <div class="product-upper">
-                            <img src=@Url.Content("~/Content/template/images/product1.jpg") id="picture1" alt="">
-                        </div>
-                        <h2><a href="" id="name1">Pistachios Halwa</a></h2>
-                        <div class="product-carousel-price">
-                            <ins id="price1">750.00/- PKR</ins> <del>999.00/- PKR</del>
-                        </div>
+                        <form method="post" id="productDetailsId1">
+                            <div class="product-upper">
+                                <img src=@Url.Content("~/Content/template/images/product2.jpg") alt="">
+                                <input type="text" name="picture1" id="picture1" value="/Content/template/images/product2.jpg" style="display:none" />
+                            </div>
+                            <h2><a href="">Akhroti Sohan Halwa</a></h2>
+                            <input type="text" name="name1" id="name1" value="Akhroti Sohan Halwa" style="display:none" />
+                            <div class="product-carousel-price">
+                                <ins>800.00/- PKR</ins> <del>1000.00/- PKR</del>
+                                <input type="text" name="price1" id="price1" value="800" style="display:none" />
+                            </div>
 
-                        <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" id="btnSave1" data-product_id="70" rel="nofollow" href="/Shop/Index">Add to cart</a>
-                        </div>
+                            <div class="product-option-shop">
+                                <a class="add_to_cart_button" data-quantity="1" data-product_sku="" type="button" id="btnSave1" rel="nofollow" href="#">Add to cart</a>
+                            </div>
+                        </form>
                     </div>
                 </div>
+
+
+                
+
+                
                 <div class="col-md-3 col-sm-6">
                     <div class="single-shop-product">
-                        <div class="product-upper">
-                            <img src=@Url.Content("~/Content/template/images/product3.jpg") id="picture2" alt="">
-                        </div>
-                        <h2><a href="" id="name2">Badami Sohan Halwa</a></h2>
-                        <div class="product-carousel-price">
-                            <ins id ="price2">799.00/- PKR</ins> <del>999.00/- PKR</del>
-                        </div>
+                        <form method="post" id="productDetailsId2">
+                            <div class="product-upper">
+                                <img src=@Url.Content("~/Content/template/images/product1.jpg") alt="">
+                                <input type="text" name="picture2" id="picture2" value="/Content/template/images/product1.jpg" style="display:none" />
+                            </div>
+                            <h2><a href="">Pistachue Halwa</a></h2>
+                            <input type="text" name="name2" id="name2" value="Pistachue Halwa" style="display:none" />
+                            <div class="product-carousel-price">
+                                <ins>750.00/- PKR</ins> <del>1000.00/- PKR</del>
+                                <input type="text" name="price2" id="price2" value="750" style="display:none" />
+                            </div>
 
-                        <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" id="btnSave2" data-product_id="70" rel="nofollow" href="/Shop/Index">Add to cart</a>
-                        </div>
+                            <div class="product-option-shop">
+                                <a class="add_to_cart_button" data-quantity="1" data-product_sku="" type="button" id="btnSave2" rel="nofollow" href="#">Add to cart</a>
+                            </div>
+                        </form>
                     </div>
                 </div>
+
+
                 <div class="col-md-3 col-sm-6">
                     <div class="single-shop-product">
-                        <div class="product-upper">
-                            <img src=@Url.Content("~/Content/template/images/product4.jpg") id="picture3" alt="">
-                        </div>
-                        <h2><a href="" id="name3">Zafarani Kaju halwa</a></h2>
-                        <div class="product-carousel-price">
-                            <ins id="price3">999.00/- PKR</ins> <del>1199.00/- PKR</del>
-                        </div>
+                        <form method="post" id="productDetailsId3">
+                            <div class="product-upper">
+                                <img src=@Url.Content("~/Content/template/images/product3.jpg") alt="">
+                                <input type="text" name="picture3" id="picture3" value="/Content/template/images/product3.jpg" style="display:none">
+                            </div>
+                            <h2><a href="">Badami Sohan Halwa</a></h2>
+                            <input type="text" name="name3" id="name3" value="Badami Sohan Halwa" style="display:none" /> 
+                            <div class="product-carousel-price">
+                                <ins>799.00/- PKR</ins> <del>999.00/- PKR</del>
+                                <input type="text" name="price3" id="price3" value="750" style="display:none" />
+                            </div>
 
-                        <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" id="btnSave3" data-product_id="70" rel="nofollow" href="/Shop/Index">Add to cart</a>
-                        </div>
+                            <div class="product-option-shop">
+                                <a class="add_to_cart_button" data-quantity="1" data-product_sku="" id="btnSave3"  rel="nofollow" href="">Add to cart</a>
+                            </div>
+                        </form>
                     </div>
                 </div>
+
                 <div class="col-md-3 col-sm-6">
                     <div class="single-shop-product">
-                        <div class="product-upper">
-                            <img src=@Url.Content("~/Content/template/images/product5.jpg") id="picture4" alt="">
-                        </div>
-                        <h2><a href="" id="name4">Premium 2in1 Sohan Halwa</a></h2>
-                        <div class="product-carousel-price">
-                            <ins id="price4">999.00/- PKR</ins> <del>1199.00/- PKR</del>
-                        </div>
+                        <form method="post" id="productDetailsId4">
+                            <div class="product-upper">
+                                <img src=@Url.Content("~/Content/template/images/product4.jpg") alt="">
+                                <input type="text" name="picture4" id="picture4" value="/Content/template/images/product4.jpg" style="display:none" />
+                            </div>
+                            <h2><a href="" >Zafarani Kaju halwa</a></h2>
+                            <input type="text" name="name4" id="name4" value="Zafarani Kaju halwa" style="display:none" />
+                            <div class="product-carousel-price">
+                                <ins>999.00/- PKR</ins> <del>1199.00/- PKR</del>
+                                <input type="text" name="price4" id="price4" value="999" style="display:none" />
+                            </div>
 
-                        <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" id="btnSave4" data-product_id="70" rel="nofollow" href="/Shop/Index">Add to cart</a>
-                        </div>
+                            <div class="product-option-shop">
+                                <a class="add_to_cart_button" data-quantity="1" data-product_sku="" id="btnSave4" rel="nofollow" href="#">Add to cart</a>
+                            </div>
+                        </form>
                     </div>
                 </div>
+
+
                 <div class="col-md-3 col-sm-6">
                     <div class="single-shop-product">
-                        <div class="product-upper">
-                            <img src=@Url.Content("~/Content/template/images/product6.jpg") id="picture5" alt="">
-                        </div>
-                        <h2><a href="" id="name5">Sugar-free Sohan Halwa</a></h2>
-                        <div class="product-carousel-price">
-                            <ins id="price5">1099.00/- PKR</ins> <del>1299.00/- PKR</del>
-                        </div>
+                        <form method="post" id="productDetailsId5">
+                            <div class="product-upper">
+                                <img src=@Url.Content("~/Content/template/images/product5.jpg") alt="">
+                                <input type="text" name="picture5" id="picture5" value="/Content/template/images/product5.jpg" style="display:none" />
+                            </div>
+                            <h2><a href="">Premium 2in1 Sohan Halwa</a></h2>
+                            <input type="text" name="name5" id="name5" value="Premium 2in1 Sohan Halwa" style="display:none" />
+                            <div class="product-carousel-price">
+                                <ins>999.00/- PKR</ins> <del>1199.00/- PKR</del>
+                                <input type="text" name="price5" id="price5" value="999" style="display:none" />
+                            </div>
 
-                        <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" id="btnSave5" data-product_id="70" rel="nofollow" href="/Shop/Index">Add to cart</a>
-                        </div>
+                            <div class="product-option-shop">
+                                <a class="add_to_cart_button" data-quantity="1" data-product_sku="" id="btnSave5" rel="nofollow" href="#">Add to cart</a>
+                            </div>
+                        </form>
                     </div>
                 </div>
+
+
                 <div class="col-md-3 col-sm-6">
                     <div class="single-shop-product">
-                        <div class="product-upper">
-                            <img src=@Url.Content("~/Content/template/images/product7.jpg") id="picture6" alt="">
-                        </div>
-                        <h2><a href="" id="name6">24 Ticky Pack – 1 Kg</a></h2>
-                        <div class="product-carousel-price">
-                            <ins id="price6">699.00/- PKR</ins> <del>799.00/- PKR</del>
-                        </div>
+                        <form method="post" id="productDetailsId6">
+                            <div class="product-upper">
+                                <img src=@Url.Content("~/Content/template/images/product6.jpg") alt="">
+                                <input type="text" name="picture6" id="picture6" value="/Content/template/images/product6.jpg" style="display:none" />
+                            </div>
+                            <h2><a href="">Sugar-free Sohan Halwa</a></h2>
+                            <input type="text" name="name6" id="name6" value="Sugar-free Sohan Halwa" style="display:none" />
+                            <div class="product-carousel-price">
+                                <ins>1099.00/- PKR</ins> <del>1299.00/- PKR</del>
+                                <input type="text" name="price6" id="price6" value="1099" style="display:none" />
+                            </div>
 
-                        <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" id="btnSave6" data-product_id="70" rel="nofollow" href="/Shop/Index">Add to cart</a>
-                        </div>
+                            <div class="product-option-shop">
+                                <a class="add_to_cart_button" data-quantity="1" data-product_sku="" id="btnSave6" rel="nofollow" href="#">Add to cart</a>
+                            </div>
+                        </form>
                     </div>
                 </div>
+
+
                 <div class="col-md-3 col-sm-6">
                     <div class="single-shop-product">
-                        <div class="product-upper">
-                            <img src=@Url.Content("~/Content/template/images/product8.jpg") id="picture7" alt="">
-                        </div>
-                        <h2><a href="" id="name7">Special 1KG Sohan Halwa</a></h2>
-                        <div class="product-carousel-price">
-                            <ins id="price7">899.00/- PKR</ins> <del>999.00/- PKR</del>
-                        </div>
+                        <form method="post" id="productDetailsId7">
+                            <div class="product-upper">
+                                <img src=@Url.Content("~/Content/template/images/product7.jpg") alt="">
+                                <input type="text" name="picture7" id="picture7" value="/Content/template/images/product7.jpg" style="display:none" />                            
+                            </div>
+                                <h2><a href="">24 Ticky Pack – 1 Kg</a></h2>
+                                <input type="text" name="name7" id="name7" value="24 Ticky Pack – 1 Kg" style="display:none" />
+                                <div class="product-carousel-price">
+                                <ins>699.00/- PKR</ins> <del>799.00/- PKR</del>
+                                <input type="text" name="price7" id="price7" value="699" style="display:none" />
+                                </div>
 
-                        <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" id="btnSave7" data-product_id="70" rel="nofollow" href="/Shop/Index">Add to cart</a>
-                        </div>
+                                <div class="product-option-shop">
+                                    <a class="add_to_cart_button" data-quantity="1" data-product_sku="" id="btnSave7" rel="nofollow" href="#">Add to cart</a>
+                            </div>
+                        </form>
                     </div>
                 </div>
+
+
                 <div class="col-md-3 col-sm-6">
                     <div class="single-shop-product">
-                        <div class="product-upper">
-                            <img src=@Url.Content("~/Content/template/images/product1.jpg") id="picture8" alt="">
-                        </div>
-                        <h2><a href="" id="name8">Special 2KG Sohan Halwa</a></h2>
-                        <div class="product-carousel-price">
-                            <ins id="price8">1699.00/- PKR</ins> <del>1899.00/- PKR</del>
-                        </div>
-
-                        <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" id="btnSave8" data-product_id="70" rel="nofollow" href="/Shop/Index">Add to cart</a>
-                        </div>
+                        <form method="post" id="productDetailsId8">
+                            <div class="product-upper">
+                                <img src=@Url.Content("~/Content/template/images/product8.jpg") alt="">
+                                <input type="text" name="picture8" id="picture8" value="/Content/template/images/product8.jpg" style="display:none" />
+                            </div>
+                            <h2><a href="">Special 1KG Sohan Halwa</a></h2>
+                            <input type="text" name="name8" id="name8" value="Special 1KG Sohan Halwa" style="display:none" />
+                            <div class="product-carousel-price">
+                                <ins>899.00/- PKR</ins> <del>999.00/- PKR</del>
+                                <input type="text" name="price8" id="price8" value="899" style="display:none" />
+                            </div>
+                            <div class="product-option-shop">
+                                <a class="add_to_cart_button" data-quantity="1" data-product_sku="" id="btnSave8" rel="nofollow" href="#">Add to cart</a>
+                            </div>
+                        </form>
                     </div>
                 </div>
+
+
                 <div class="col-md-3 col-sm-6">
                     <div class="single-shop-product">
-                        <div class="product-upper">
-                            <img src=@Url.Content("~/Content/template/images/product2.jpg") id="picture9" alt="">
-                        </div>
-                        <h2><a href="" id="name9">Special Kaju Sohan Halwa</a></h2>
-                        <div class="product-carousel-price">
-                            <ins id="price9">899.00/- PKR</ins> <del>999.00/- PKR</del>
-                        </div>
+                        <form method="post" id="prductDetailsId9">
+                            <div class="product-upper">
+                                <img src=@Url.Content("~/Content/template/images/product1.jpg") alt="">
+                                <input type="text" name="picture9" id="picture9" value="/Content/template/images/product1.jpg" style="display:none"/>
+                            </div>
+                            <h2><a href="">Special 2KG Sohan Halwa</a></h2>
+                            <input type="text" name="name9" id="name9" value="Special 2KG Sohan Halwa" style="display:none" />
+                            <div class="product-carousel-price">
+                                <ins>1699.00/- PKR</ins> <del>1899.00/- PKR</del>
+                                <input type="text" name="price9" id="price9" value="1699" style="display:none" />
+                            </div>
 
-                        <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" id="btnSave9" data-product_id="70" rel="nofollow" href="/Shop/Index">Add to cart</a>
-                        </div>
+                            <div class="product-option-shop">
+                                <a class="add_to_cart_button" data-quantity="1" data-product_sku="" id="btnSave9" rel="nofollow" href="#">Add to cart</a>
+                            </div>
+                        </form>
                     </div>
                 </div>
+
+
                 <div class="col-md-3 col-sm-6">
                     <div class="single-shop-product">
-                        <div class="product-upper">
-                            <img src=@Url.Content("~/Content/template/images/product3.jpg") id="picture10" alt="">
-                        </div>
-                        <h2><a href="" id="name10">Double Akhroti Sohan Halwa</a></h2>
-                        <div class="product-carousel-price">
-                            <ins id="price10">999.00/- PKR</ins> <del>1199.00/- PKR</del>
-                        </div>
+                        <form method="post" id="productDetailsId10">
+                            <div class="product-upper">
+                                <img src=@Url.Content("~/Content/template/images/product2.jpg") alt="">
+                                <input type="text" name="picture10" id="picture10" value="/Content/template/images/product2.jpg" style="display:none" />
+                            </div>
+                            <h2><a href="">Special Kaju Sohan Halwa</a></h2>
+                            <input type="text" name="name10" id="name10" value="Special Kaju Sohan Halwa" style="display:none" />
+                            <div class="product-carousel-price">
+                                <ins>899.00/- PKR</ins> <del>999.00/- PKR</del>
+                                <input type="text" name="price10" id="price10" value="899" style="display:none" />
 
-                        <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" id="btnSave10" data-product_id="70" rel="nofollow" href="/Shop/Index">Add to cart</a>
-                        </div>
+                            </div>
+
+                            <div class="product-option-shop">
+                                <a class="add_to_cart_button" data-quantity="1" data-product_sku="" id="btnSave10" rel="nofollow" href="#">Add to cart</a>
+                            </div>
+                        </form>
                     </div>
                 </div>
+
+
                 <div class="col-md-3 col-sm-6">
                     <div class="single-shop-product">
-                        <div class="product-upper">
-                            <img src=@Url.Content("~/Content/template/images/product4.jpg") id="picture11" alt="">
-                        </div>
-                        <h2><a href="" id="name11">Mix Dry Fruits Sohan Halwa</a></h2>
-                        <div class="product-carousel-price">
-                            <ins id="price11">1099.00/- PKR</ins> <del>1299.00/- PKR</del>
-                        </div>
-
-                        <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" id="btnSave11" data-product_id="70" rel="nofollow" href="/Shop/Index">Add to cart</a>
-                        </div>
+                        <form method="post" id="productDetailsId11">
+                            <div class="product-upper">
+                                <img src=@Url.Content("~/Content/template/images/product3.jpg") alt="">
+                                <input type="text" name="picture11" id="picture11" value="/Content/template/images/product3.jpg" style="display:none" />
+                            </div>
+                            <h2><a href="">Double Akhroti Sohan Halwa</a></h2>
+                            <input type="text" name="name11" id="name11" value="Double Akhroti Sohan Halwa" style="display:none" />                            
+                            <div class="product-carousel-price">
+                             <ins >999.00/- PKR</ins> <del>1199.00/- PKR</del>
+                                <input type="text" name="price11" id="price11" value="999" style="display:none" />
+                            </div>
+                            <div class="product-option-shop">
+                                <a class="add_to_cart_button" data-quantity="1" data-product_sku="" id="btnSave11" rel="nofollow" href="#">Add to cart</a>
+                            </div>
+                        </form>
                     </div>
                 </div>
+
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-shop-product">
+                        <form method="post" id="productDetailsId12">
+                            <div class="product-upper">
+                                <img src=@Url.Content("~/Content/template/images/product4.jpg") alt="">
+                                <input type="text" name="picture12" id="picture12" value="/Content/template/images/product4.jpg" style="display:none" />
+                            </div>
+                            <h2><a href="">Mix Dry Fruits Sohan Halwa</a></h2>
+                            <input type="text" name="name12" id="name12" value="Mix Dry Fruits Sohan Halwa" style="display:none" />
+
+                            <div class="product-carousel-price">
+                                <ins >1099.00/- PKR</ins> <del>1299.00/- PKR</del>
+                                <input type="text" name="price12" id="price12" value="1099" style="display:none" />
+                            </div>
+
+                            <div class="product-option-shop">
+                                <a class="add_to_cart_button" data-quantity="1" data-product_sku="" id="btnSave12" rel="nofollow" href="#">Add to cart</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
             </div>
 
             <div class="row">
@@ -448,256 +538,236 @@
     <script>
         $(document).ready(function () {
             //function will be called on button click having id btnsave
-            $("#btnSave").click(function () {
-                $.ajax(
-                {
-                    type: "POST", //HTTP POST Method
-                    url: "/shop/Index", // Controller/View
-                    data: { //Passing data
-                        Name: $("#name").val(), //Reading text box values using Jquery
-                        Price: $("#price").val(),
-                        Image: $("#picture").val(),
-                        success: function () {
-                            
-                            alert("Data is copyed")
-                        }
-                        
-                    }
-                });
-            });
-        });
-    </script>
-
-    <script>
-        $(document).ready(function () {
-            //function will be called on button click having id btnsave
             $("#btnSave1").click(function () {
-                $.ajax(
-                {
-                    type: "POST", //HTTP POST Method
-                    url: "/shop/Index", // Controller/View
-                    data: { //Passing data
-                        Name: $("#name1").val(), //Reading text box values using Jquery
-                        Price: $("#price1").val(),
-                        Image: $("#picture1").val(),
-                        success: function () {
-                            alert("Data is copyed")
-                        }
-                    }
-                });
-            });
-        });
-    </script>
+                var name1 = $("#name1").val();
+                var price1 = $("#price1").val();
+                var picture1 = $("#picture1").val();
+                $.ajax({
+                    type: "post",
+                    url: "/shop/saveData", // Controller/View                    
+                    data: { name: name1, price: price1, picture: picture1 },
 
-    <script>
+                    success: function () {
+                        alert("Done")
+                    }
+
+                });
+                });
+        });
+
         $(document).ready(function () {
             //function will be called on button click having id btnsave
             $("#btnSave2").click(function () {
-                $.ajax(
-                {
-                    type: "POST", //HTTP POST Method
-                    url: "/shop/Index", // Controller/View
-                    data: { //Passing data
-                        Name: $("#name2").val(), //Reading text box values using Jquery
-                        Price: $("#price2").val(),
-                        Image: $("#picture2").val(),
-                        success: function () {
-                            alert("Data is copyed")
-                        }
+                var name2 = $("#name2").val();
+                var price2 = $("#price2").val();
+                var picture2 = $("#picture2").val();
+                $.ajax({
+                    type: "post",
+                    url: "/shop/saveData", // Controller/View
+                    data: { name: name2, price: price2, picture: picture2 },
+
+                    success: function () {
+                        alert("Done")
                     }
+
                 });
             });
         });
-    </script>
 
-    <script>
         $(document).ready(function () {
             //function will be called on button click having id btnsave
             $("#btnSave3").click(function () {
-                $.ajax(
-                {
-                    type: "POST", //HTTP POST Method
-                    url: "/shop/Index", // Controller/View
-                    data: { //Passing data
-                        Name: $("#name3").val(), //Reading text box values using Jquery
-                        Price: $("#price3").val(),
-                        Image: $("#picture3").val(),
-                        success: function () {
-                            alert("Data is copyed")
-                        }
+                var name3 = $("#name3").val();
+                var price3 = $("#price3").val();
+                var picture3 = $("#picture3").val();
+                $.ajax({
+                    type: "post",
+                    url: "/shop/saveData", // Controller/View
+                    data: { name: name3, price: price3, picture: picture3 },
+
+                    success: function () {
+                        alert("Done")
                     }
+
                 });
             });
         });
-    </script>
 
-    <script>
         $(document).ready(function () {
             //function will be called on button click having id btnsave
             $("#btnSave4").click(function () {
-                $.ajax(
-                {
-                    type: "POST", //HTTP POST Method
-                    url: "/shop/Index", // Controller/View
-                    data: { //Passing data
-                        Name: $("#name4").val(), //Reading text box values using Jquery
-                        Price: $("#price4").val(),
-                        Image: $("#picture4").val(),
-                        success: function () {
-                            alert("Data is copyed")
-                        }
+                var name4 = $("#name4").val();
+                var price4 = $("#price4").val();
+                var picture4 = $("#picture4").val();
+                $.ajax({
+                    type: "post",
+                    url: "/shop/saveData", // Controller/View
+                    data: { name: name4, price: price4, picture: picture4 },
+
+                    success: function () {
+                        alert("Done")
                     }
+
                 });
             });
         });
-    </script>
 
-    <script>
         $(document).ready(function () {
             //function will be called on button click having id btnsave
             $("#btnSave5").click(function () {
-                $.ajax(
-                {
-                    type: "POST", //HTTP POST Method
-                    url: "/shop/Index", // Controller/View
-                    data: { //Passing data
-                        Name: $("#name5").val(), //Reading text box values using Jquery
-                        Price: $("#price5").val(),
-                        Image: $("#picture5").val(),
-                        success: function () {
-                            alert("Data is copyed")
-                        }
+                var name5 = $("#name5").val();
+                var price5 = $("#price5").val();
+                var picture5 = $("#picture5").val();
+                $.ajax({
+                    type: "post",
+                    url: "/shop/saveData", // Controller/View
+                    data: { name: name5, price: price5, picture: picture5 },
+
+                    success: function () {
+                        alert("Done")
                     }
+
                 });
             });
         });
-    </script>
 
-    <script>
         $(document).ready(function () {
             //function will be called on button click having id btnsave
             $("#btnSave6").click(function () {
-                $.ajax(
-                {
-                    type: "POST", //HTTP POST Method
-                    url: "/shop/Index", // Controller/View
-                    data: { //Passing data
-                        Name: $("#name6").val(), //Reading text box values using Jquery
-                        Price: $("#price6").val(),
-                        Image: $("#picture6").val(),
-                        success: function () {
-                            alert("Data is copyed")
-                        }
+                var name6 = $("#name6").val();
+                var price6 = $("#price6").val();
+                var picture6 = $("#picture6").val();
+                $.ajax({
+                    type: "post",
+                    url: "/shop/saveData", // Controller/View
+                    data: { name: name6, price: price6, picture: picture6 },
+
+                    success: function () {
+                        alert("Done")
                     }
+
                 });
             });
         });
-    </script>
 
-    <script>
         $(document).ready(function () {
             //function will be called on button click having id btnsave
             $("#btnSave7").click(function () {
-                $.ajax(
-                {
-                    type: "POST", //HTTP POST Method
-                    url: "/shop/Index", // Controller/View
-                    data: { //Passing data
-                        Name: $("#name7").val(), //Reading text box values using Jquery
-                        Price: $("#price7").val(),
-                        Image: $("#picture7").val(),
-                        success: function () {
-                            alert("Data is copyed")
-                        }
+                var name7 = $("#name7").val();
+                var price7 = $("#price7").val();
+                var picture7 = $("#picture7").val();
+                $.ajax({
+                    type: "post",
+                    url: "/shop/saveData", // Controller/View
+                    data: { name: name7, price: price7, picture: picture7 },
+
+                    success: function () {
+                        alert("Done")
                     }
+
                 });
             });
         });
-    </script>
 
-    <script>
         $(document).ready(function () {
             //function will be called on button click having id btnsave
             $("#btnSave8").click(function () {
-                $.ajax(
-                {
-                    type: "POST", //HTTP POST Method
-                    url: "/shop/Index", // Controller/View
-                    data: { //Passing data
-                        Name: $("#name8").val(), //Reading text box values using Jquery
-                        Price: $("#price8").val(),
-                        Image: $("#picture8").val(),
-                        success: function () {
-                            alert("Data is copyed")
-                        }
+                var name8 = $("#name8").val();
+                var price8 = $("#price8").val();
+                var picture8 = $("#picture8").val();
+                $.ajax({
+                    type: "post",
+                    url: "/shop/saveData", // Controller/View
+                    data: { name: name8, price: price8, picture: picture8 },
+
+                    success: function () {
+                        alert("Done")
                     }
+
                 });
             });
         });
-    </script>
 
-    <script>
         $(document).ready(function () {
             //function will be called on button click having id btnsave
             $("#btnSave9").click(function () {
-                $.ajax(
-                {
-                    type: "POST", //HTTP POST Method
-                    url: "/shop/Index", // Controller/View
-                    data: { //Passing data
-                        Name: $("#name9").val(), //Reading text box values using Jquery
-                        Price: $("#price9").val(),
-                        Image: $("#picture9").val(),
-                        success: function () {
-                            alert("Data is copyed")
-                        }
+                var name9 = $("#name9").val();
+                var price9 = $("#price9").val();
+                var picture9 = $("#picture9").val();
+                $.ajax({
+                    type: "post",
+                    url: "/shop/saveData", // Controller/View
+                    data: { name: name9, price: price9, picture: picture9 },
+
+                    success: function () {
+                        alert("Done")
                     }
+
                 });
             });
         });
-    </script>
 
-    <script>
         $(document).ready(function () {
             //function will be called on button click having id btnsave
             $("#btnSave10").click(function () {
-                $.ajax(
-                {
-                    type: "POST", //HTTP POST Method
-                    url: "/shop/Index", // Controller/View
-                    data: { //Passing data
-                        Name: $("#name10").val(), //Reading text box values using Jquery
-                        Price: $("#price10").val(),
-                        Image: $("#picture10").val(),
-                        success: function () {
-                            alert("Data is copyed")
-                        }
+                var name10 = $("#name10").val();
+                var price10 = $("#price10").val();
+                var picture10 = $("#picture10").val();
+                $.ajax({
+                    type: "post",
+                    url: "/shop/saveData", // Controller/View
+                    data: { name: name10, price: price10, picture: picture10 },
+
+                    success: function () {
+                        alert("Done")
                     }
+
                 });
             });
         });
-    </script>
 
-    <script>
         $(document).ready(function () {
             //function will be called on button click having id btnsave
             $("#btnSave11").click(function () {
-                $.ajax(
-                {
-                    type: "POST", //HTTP POST Method
-                    url: "/shop/Index", // Controller/View
-                    data: { //Passing data
-                        Name: $("#name11").val(), //Reading text box values using Jquery
-                        Price: $("#price11").val(),
-                        Image: $("#picture11").val(),
-                        success: function () {
-                            alert("Data is copyed")
-                        }
+                var name11 = $("#name11").val();
+                var price11 = $("#price11").val();
+                var picture11 = $("#picture11").val();
+                $.ajax({
+                    type: "post",
+                    url: "/shop/saveData", // Controller/View
+                    data: { name: name11, price: price11, picture: picture11 },
+
+                    success: function () {
+                        alert("Done")
                     }
+
                 });
             });
         });
+
+        $(document).ready(function () {
+            //function will be called on button click having id btnsave
+            $("#btnSave12").click(function () {
+                var name12 = $("#name12").val();
+                var price12 = $("#price12").val();
+                var picture12 = $("#picture12").val();
+                $.ajax({
+                    type: "post",
+                    url: "/shop/saveData", // Controller/View
+                    data: { name: name12, price: price12, picture: picture12 },
+
+                    success: function () {
+                        alert("Done")
+                    }
+
+                });
+            });
+        });
+
+
+        
     </script>
+
 
 
     <!-- Main Script -->

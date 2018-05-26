@@ -13,10 +13,10 @@ namespace ECommerceWebsiteVpProject.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class WebsiteEntities2 : DbContext
+    public partial class WebsiteEntitiesDB : DbContext
     {
-        public WebsiteEntities2()
-            : base("name=WebsiteEntities2")
+        public WebsiteEntitiesDB()
+            : base("name=WebsiteEntitiesDB")
         {
         }
     
@@ -26,10 +26,6 @@ namespace ECommerceWebsiteVpProject.Models
         }
     
         public virtual DbSet<product> products { get; set; }
-
-        internal void Add(ShopModelView shopModelView)
-        {
-            throw new NotImplementedException();
-        }
+        public virtual DbSet<RegisterUser> RegisterUsers { get; set; }
     }
 }
