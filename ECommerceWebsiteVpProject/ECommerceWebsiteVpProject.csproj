@@ -284,9 +284,9 @@
     <Content Include="Content\template\Login\vendor\select2\select2.js" />
     <Content Include="Content\template\Login\vendor\select2\select2.min.css" />
     <Content Include="Content\template\Login\vendor\select2\select2.min.js" />
+    <Content Include="Content\template\new.css" />
     <Content Include="Content\template\shop.html" />
     <Content Include="Content\template\single-product.html" />
-    <Content Include="Content\template\style.css" />
     <Content Include="Content\template\stylesheet.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
