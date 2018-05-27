@@ -35,6 +35,12 @@ namespace ECommerceWebsiteVpProject.Controllers
             obj.SaveChanges();
             return View();
         }
+        public ActionResult login(string user, string pass)
+        {
+           
+
+            return View();
+        }
 
     }
 }

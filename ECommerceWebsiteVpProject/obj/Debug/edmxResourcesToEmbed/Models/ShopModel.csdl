@@ -12,6 +12,7 @@
   <EntityContainer Name="WebsiteEntitiesDB" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="products" EntityType="Self.product" />
     <EntitySet Name="RegisterUsers" EntityType="WebsiteModel.RegisterUser" />
+    <EntitySet Name="Logins" EntityType="WebsiteModel.Login" />
   </EntityContainer>
   <EntityType Name="RegisterUser">
     <Key>
@@ -27,6 +28,14 @@
     <Property Name="userPostelcode" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="userEmail" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
     <Property Name="userPhone" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="userPassword" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="userPassword" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Login">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="username" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="password" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
   </EntityType>
 </Schema>

@@ -27,5 +27,6 @@ namespace ECommerceWebsiteVpProject.Models
     
         public virtual DbSet<product> products { get; set; }
         public virtual DbSet<RegisterUser> RegisterUsers { get; set; }
+        public virtual DbSet<Login> Logins { get; set; }
     }
 }
